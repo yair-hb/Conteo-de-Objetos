@@ -30,7 +30,7 @@ for c in contornos:
 
     cv2.imshow('IMAGEN DE ENTRADA', imagen)
     cv2.imshow('IMAGEN GRAY',imgris)
-    #se presiona cualquier tela para continuar el ciclo de conteo
+    #se presiona cualquier tecla para continuar el ciclo de conteo
     cv2.waitKey(0)
     i = i+1
 cv2.destroyAllWindows()
