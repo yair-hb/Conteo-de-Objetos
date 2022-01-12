@@ -15,6 +15,7 @@ contornos,_ = cv2.findContours(th, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 cv2.drawContours(imagen, contornos, -1, (0,0,255),2)
 print ('Contornos:', len(contornos))
 
+#enumerar los elementos encontrados en la imagen
 font = cv2.FONT_HERSHEY_SIMPLEX
 i=0
 for c in contornos:
@@ -29,6 +30,7 @@ for c in contornos:
 
     cv2.imshow('IMAGEN DE ENTRADA', imagen)
     cv2.imshow('IMAGEN GRAY',imgris)
+    #se presiona cualquier tela para continuar el ciclo de conteo
     cv2.waitKey(0)
     i = i+1
 cv2.destroyAllWindows()
